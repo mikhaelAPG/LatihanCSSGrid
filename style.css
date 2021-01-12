@@ -13,3 +13,19 @@ body {
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     margin: 50px;
 }
+
+/* header */
+.header {
+    display: grid;
+    grid-template-areas: 
+    'hero hero feature-1'
+    'hero hero feature-2';
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 350px;
+    background-image: url(img/me.jpg);
+    background-size: cover;
+    background-position: center;
+}
