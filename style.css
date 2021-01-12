@@ -189,6 +189,21 @@ body {
     font-size: 0.8em;
 }
 
+.gallery {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+}
+
+.gallery h2 {
+    /* grid-column-start: 1; */
+    /* grid-column-end: -1 ; */
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 /* responsive */
 @media screen and (max-width: 1024px) {
     .menu {
@@ -250,6 +265,11 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+
+    body {
+        margin: 15px;
+    }
+    
     .header {
         grid-template-areas:
         'hero'
